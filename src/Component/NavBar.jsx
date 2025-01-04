@@ -16,39 +16,39 @@ function NavBar() {
             </h2>
             <div className="flex items-center ">
               <img
-              className="w-3" src="./public/down-arrow.png" alt="" />
+              className="w-3" src="down-arrow.png" alt="" />
             </div>
           </div>
           <div className="flex items-center justify-center">
             <div className="flex hover:text-orange-500 hover:cursor-pointer p-2">
-              <img className="w-6 m-2" src="./public/briefcase.webp" alt="" />
+              <img className="w-6 m-2" src="briefcase.webp" alt="" />
               <p className="m-2 font-semibold">Swiggy Corporate</p>
             </div>
             <div className="flex hover:text-orange-500 hover:cursor-pointer p-2">
               <img
                 className="w-6 m-2"
-                src="./public/search-interface-symbol.png"
+                src="search-interface-symbol.png"
                 alt=""
               />
               <p className="m-2 font-semibold">Search</p>
             </div>
             <div className="flex hover:text-orange-500 hover:cursor-pointer p-2">
-              <img className="w-6 m-2" src="./public/offer.png" alt="" />
+              <img className="w-6 m-2" src="offer.png" alt="" />
               <p className="m-2 font-semibold">
                 Offers
                 <sup className="text-orange-500 ">NEW</sup>
               </p>
             </div>
             <div className="flex hover:text-orange-500 hover:cursor-pointer p-2">
-              <img className="w-6 m-2" src="./public/question.png" alt="" />
+              <img className="w-6 m-2" src="question.png" alt="" />
               <p className="m-2 font-semibold">help</p>
             </div>
             <div className="flex hover:text-orange-500 hover:cursor-pointer p-2">
-              <img className="w-6 m-2" src="./public/log-out.png" alt="" />
+              <img className="w-6 m-2" src="log-out.png" alt="" />
               <p className="m-2 font-semibold">Sign In</p>
             </div>
             <div className="flex hover:text-orange-500 hover:cursor-pointer p-2 ">
-              <img className="w-6 m-2" src="./public/cart.png" alt="" />
+              <img className="w-6 m-2" src="cart.png" alt="" />
               <p className="m-2 font-semibold">Cart</p>
             </div>
           </div>
