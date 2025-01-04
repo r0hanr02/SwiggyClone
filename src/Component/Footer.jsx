@@ -8,8 +8,8 @@ const Footer = () => {
   return (
     <div>
       <div className="flex flex-col bg-slate-100 items-center justify-center">
-        <div className="w-10/12 flex items-center justify-around border-t-2 border-black  ">
-          <p className="w-1/2 text-2xl font-bold m-3 ">
+        <div className="w-full md:w-9/12 flex flex-col md:flex-row items-center justify-around border-t-2 border-black  ">
+          <p className="w-full text-2xl font-bold m-3 ">
             For better experience,download the Swiggy app now
           </p>
           <div className=" flex m-3">
@@ -25,7 +25,7 @@ const Footer = () => {
             />
           </div>
         </div>
-        <div className="w-9/12 flex items-start m-10 justify-between">
+        <div className="w-full md:w-9/12 flex items-center justify-center md:items-start md:m-10 md:justify-between">
           <div className="w-[30%]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ const Footer = () => {
             </svg>
             <p>© 2025 Swiggy Limited</p>
           </div>
-          <div className="w-[17%]">
+          <div className="w-[17%] hidden md:block">
             <p className="font-bold">Company</p>
             <ul>
               <li className="py-2 text-slate-600 font-semibold">About Us</li>
@@ -64,7 +64,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="w-[17%]">
+          <div className="w-[17%] hidden md:block">
             <div>
               <p className="font-bold">Contact Us:</p>
               <ul>
@@ -95,8 +95,8 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="w-[17%]">
-            <p className="font-bold">Available in:</p>
+          <div className="w-[17%] hidden md:block">
+            <p className="md:block font-bold">Available in:</p>
             <div>
               <ul>
                 <li className="py-2 text-slate-600 font-semibold">Bangalore</li>
@@ -127,10 +127,10 @@ const Footer = () => {
               </select>
             </div>
           </div>
-          <div className="w-[17%]">
+          <div className="w-[17%] hidden md:block">
             <div>
-              <p className="font-bold">Life at Swiggy</p>
-              <ul>
+              <p className="font-bold hidden md:block">Life at Swiggy</p>
+              <ul className="">
                 <li className="py-2 text-slate-600 font-semibold">
                   Explore with us{" "}
                 </li>

@@ -177,13 +177,13 @@ const MainComponent = () => {
   
 
   return (
-    <div className="flex flex-col items-center justify-center m-5">
-      <div className="w-10/12">
-        <p className="text-2xl font-bold">
+    <div className="w-full flex flex-col items-center justify-center ">
+      <div className="w-full md:w-9/12">
+        <p className="text-xl md:text-2xl font-bold">
           Restaurants with online food delivery in Mumbai
         </p>
       </div>
-      <div className="w-10/12 flex mt-8">
+      <div className="w-full md:w-9/12 flex flex-wrap mt-8">
         <div className="w-20 shadow-lg flex items-center justify-center rounded-2xl border-gray-400 border-2 mx-2 p-1">
           <h6 className="text-md font-semibold mx-1">Filter</h6>
           <img className="w-5" src="./public/filter.png" alt="" />
@@ -194,7 +194,7 @@ const MainComponent = () => {
         </div>
         {filter.map((filters, index) => {
           return (  
-            <div key={index}>
+            <div key={index} > 
               <div className="w-22 shadow-lg flex items-center justify-center rounded-2xl border-gray-400 border-2 mx-2 p-1">
                 <h6 className="text-md font-semibold mx-1">{filters}</h6>
               </div>
@@ -206,7 +206,7 @@ const MainComponent = () => {
           {restaurants.map((restaurant, index) => (
             <div
               key={index}
-              className="w-64 bg-white rounded-lg shadow-md overflow-hidden m-3 hover:scale-90 duration-300"
+              className="w-[40%] md:w-80 bg-white rounded-lg shadow-md overflow-hidden m-3 hover:scale-90 duration-300"
             >
               <img
                 src={restaurant.img}

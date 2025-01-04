@@ -24,29 +24,29 @@ const FirstSlider = () => {
   // };
 
   return (
-    <div className="flex flex-col items-center justify-center m-5">
-      <div className="w-10/12 flex justify-between">
+    <div className="flex flex-col items-center justify-center">
+      <div className="w-full md:w-9/12 flex justify-between my-5">
         <p className="text-2xl font-bold">What&apos;s on your mind?</p>
         <div className="flex gap-3">
           <div
             // onClick={previous}
             className="w-8 rounded-full bg-slate-200 flex items-center justify-center cursor-pointer selection:bg-transparent"
           >
-            <img className="w-4" src="back.png" alt="Back" />
+            <img className="w-4" src="./public/back.png" alt="Back" />
           </div>
           <div
             // onClick={Next}
             className="w-8 rounded-full bg-slate-200 flex items-center justify-center cursor-pointer selection:bg-transparent"
           >
-            <img className="w-4" src="next.png" alt="Next" />
+            <img className="w-4" src="./public/next.png" alt="Next" />
           </div>
         </div>
       </div>
-      <div className="w-2/3 flex  border-b-2 border-gray-400">
-        <div className="flex space-x-4">
+      <div className="w-full md:w-2/3 flex  border-b-2 border-gray-400">
+        <div className="flex  md:space-x-4">
           {images.map((image, index) => (
             <div key={index} className="w-full cursor-pointer">
-              <img className="w-64" src={image} alt={`Image ${index + 1}`} />
+              <img className="w-80" src={image} alt={`Image ${index + 1}`} />
             </div>
           ))}
         </div>

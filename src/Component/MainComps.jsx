@@ -37,11 +37,11 @@ const MainComps = () => {
     
   ]
   return (
-    <div className="flex flex-col items-center justify-center m-5">
-        <div className="w-10/12 flex justify-between">
+    <div className="flex flex-col items-center justify-center">
+        <div className="w-full md:w-9/12 flex justify-between">
         <p className="text-2xl font-bold">Best Places to Eat Across Cities</p>
       </div>
-      <div className="w-10/12 flex flex-wrap m-5 ">
+      <div className="w-full md:w-9/12 flex flex-wrap m-5 ">
         {cities.map((term, index) => {
           return (
             <div key={index}>
@@ -52,10 +52,10 @@ const MainComps = () => {
           );
         })}
       </div>
-      <div className="w-10/12 flex justify-between">
+      <div className="w-full md:w-9/12 flex justify-between">
         <p className="text-2xl font-bold">Best Cuisines Near Me</p>
       </div>
-      <div className="w-10/12 flex flex-wrap m-5 ">
+      <div className="w-full md:w-9/12 flex flex-wrap m-5 ">
         {terms.map((term, index) => {
           return (
             <div key={index}>
@@ -66,10 +66,10 @@ const MainComps = () => {
           );
         })}
       </div>
-      <div className="w-10/12 flex justify-between">
+      <div className="w-full md:w-9/12 flex justify-between">
         <p className="text-2xl font-bold">Explore Every Restaurants Near Me</p>
       </div>
-      <div className="w-10/12 flex flex-wrap m-5">
+      <div className="w-full md:w-9/12 flex flex-wrap m-5">
         {every_restaurents.map((term, index) => {
           return (
             <div key={index}>

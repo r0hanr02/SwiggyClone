@@ -31,22 +31,14 @@ const SecSlider = () => {
       category: "Pizzas, Italian,Desserts",
       location: "Kurla West",
       img: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/11/29/9f606f46-923b-4be7-abfe-f3875f19da9a_24463.jpg",
-    },
-    // {
-    //   name: "Domino's Pizza",
-    //   offer: "ITEMS AT ₹89",
-    //   rating: "3.8 · 20-25 mins",
-    //   category: "Pizzas, Italian,Desserts",
-    //   location: "Kurla West",
-    //   img: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/11/29/9f606f46-923b-4be7-abfe-f3875f19da9a_24463.jpg",
-    // }
+    }
   ];
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center m-5 mx-7">
-        <div className="w-10/12 flex justify-between">
-          <p className="text-2xl font-bold">Top restaurant chains in Mumbai</p>
+      <div className="w-full flex flex-col items-center justify-center ">
+        <div className="w-full md:w-9/12 flex justify-between my-5">
+          <p className="text-xl md:text-2xl font-bold">Top restaurant chains in Mumbai</p>
           <div className="flex gap-3">
             <div className="w-8 rounded-full bg-slate-200 flex items-center justify-center cursor-pointer selection:bg-transparent">
               <img className="w-4" src="back.png" alt="Back" />
@@ -56,11 +48,11 @@ const SecSlider = () => {
             </div>
           </div>
         </div>
-        <div className="flex">
+        <div className=" flex flex-wrap justify-center">
           {restaurants.map((restaurant, index) => (
             <div
               key={index}
-              className="w-60 bg-white rounded-lg shadow-md overflow-hidden m-3 hover:scale-90 duration-100"
+              className="w-[40%] md:w-80 bg-white rounded-lg shadow-md overflow-hidden m-3 hover:scale-90 duration-100"
             >
               <img
                 src={restaurant.img}
