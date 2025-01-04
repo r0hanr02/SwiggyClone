@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-full md:w-9/12 flex items-center justify-center md:items-start md:m-10 md:justify-between">
-          <div className="w-[30%]">
+          <div className="w-full md:w-[30%] flex flex-col items-center md:items-start justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="160"
@@ -47,7 +47,7 @@ const Footer = () => {
               </g>
               <defs></defs>
             </svg>
-            <p className="text-md font-semibold">© 2025 Swiggy Limited</p>
+            <p className="w-full text-md flex justify-center md:block font-semibold">© 2025 Swiggy Limited</p>
           </div>
           <div className="w-[17%] hidden md:block">
             <p className="font-bold">Company</p>
