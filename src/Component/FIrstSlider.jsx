@@ -32,13 +32,13 @@ const FirstSlider = () => {
             // onClick={previous}
             className="w-8 rounded-full bg-slate-200 flex items-center justify-center cursor-pointer selection:bg-transparent"
           >
-            <img className="w-4" src="./public/back.png" alt="Back" />
+            <img className="w-4" src="back.png" alt="Back" />
           </div>
           <div
             // onClick={Next}
             className="w-8 rounded-full bg-slate-200 flex items-center justify-center cursor-pointer selection:bg-transparent"
           >
-            <img className="w-4" src="./public/next.png" alt="Next" />
+            <img className="w-4" src="next.png" alt="Next" />
           </div>
         </div>
       </div>
