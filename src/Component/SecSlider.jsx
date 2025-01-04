@@ -38,7 +38,7 @@ const SecSlider = () => {
     <>
       <div className="w-full flex flex-col items-center justify-center ">
         <div className="w-full md:w-9/12 flex justify-between my-5">
-          <p className="text-xl md:text-2xl font-bold">Top restaurant chains in Mumbai</p>
+          <p className="text-xl md:text-2xl font-bold m-2">Top restaurant chains in Mumbai</p>
           <div className="flex gap-3">
             <div className="w-8 rounded-full bg-slate-200 flex items-center justify-center cursor-pointer selection:bg-transparent">
               <img className="w-4" src="back.png" alt="Back" />
@@ -52,7 +52,7 @@ const SecSlider = () => {
           {restaurants.map((restaurant, index) => (
             <div
               key={index}
-              className="w-[40%] md:w-80 bg-white rounded-lg shadow-md overflow-hidden m-3 hover:scale-90 duration-100"
+              className="w-[40%] md:w-80 bg-white rounded-lg shadow-md overflow-hidden m-3 hover:scale-90 duration-300"
             >
               <img
                 src={restaurant.img}

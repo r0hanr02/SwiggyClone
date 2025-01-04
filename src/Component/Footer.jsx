@@ -9,17 +9,17 @@ const Footer = () => {
     <div>
       <div className="flex flex-col bg-slate-100 items-center justify-center">
         <div className="w-full md:w-9/12 flex flex-col md:flex-row items-center justify-around border-t-2 border-black  ">
-          <p className="w-full text-2xl font-bold m-3 ">
+          <p className="w-full text-2xl font-bold m ">
             For better experience,download the Swiggy app now
           </p>
-          <div className=" flex m-3">
+          <div className="md:w-full flex m-3 justify-center">
             <img
-              className="w-56 "
+              className="w-[40%] md:w-56 "
               src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/play_store.png"
               alt=""
             />
             <img
-              className="w-52 "
+              className="w-[40%] md:w-56 "
               src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/app_store.png"
               alt=""
             />
@@ -30,7 +30,7 @@ const Footer = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="160"
-              height="49"
+              height="50"
               fill="none"
             >
               <g filter="url(#filter0_b_674_19294)">
@@ -47,7 +47,7 @@ const Footer = () => {
               </g>
               <defs></defs>
             </svg>
-            <p>© 2025 Swiggy Limited</p>
+            <p className="text-md font-semibold">© 2025 Swiggy Limited</p>
           </div>
           <div className="w-[17%] hidden md:block">
             <p className="font-bold">Company</p>

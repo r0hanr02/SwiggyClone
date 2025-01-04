@@ -179,7 +179,7 @@ const MainComponent = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center ">
       <div className="w-full md:w-9/12">
-        <p className="text-xl md:text-2xl font-bold">
+        <p className="text-xl m-2 md:text-2xl font-bold">
           Restaurants with online food delivery in Mumbai
         </p>
       </div>
