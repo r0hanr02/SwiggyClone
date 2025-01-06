@@ -206,7 +206,7 @@ const MainComponent = () => {
           {restaurants.map((restaurant, index) => (
             <div
               key={index}
-              className="w-[40%] md:w-80 bg-white rounded-lg shadow-md overflow-hidden m-3 hover:scale-90 duration-300"
+              className="w-[40%] md:w-64 bg-white rounded-lg shadow-md overflow-hidden m-3 hover:scale-90 duration-300"
             >
               <img
                 src={restaurant.img}
