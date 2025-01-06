@@ -44,7 +44,7 @@ const FirstSlider = () => {
       <div className="w-full md:w-2/3 flex  border-b-2 border-gray-400">
         <div className="flex  md:space-x-4">
           {images.map((image, index) => (
-            <div key={index} className="w-20 md:w-44 cursor-pointer">
+            <div key={index} className="w-[20%] cursor-pointer">
               <img className="w-80" src={image} alt={`Image ${index + 1}`} />
             </div>
           ))}
