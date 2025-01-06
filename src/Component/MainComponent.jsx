@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect, useState } from "react";
+
 
 const MainComponent = () => {
   const filter = [
@@ -174,7 +175,6 @@ const MainComponent = () => {
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBxFgQ0NV3AtxI8SlzW4OB0Z7f861anJ-fHA&s"
     }
   ];
-  
 
   return (
     <div className="w-full flex flex-col items-center justify-center ">
@@ -183,26 +183,26 @@ const MainComponent = () => {
           Restaurants with online food delivery in Mumbai
         </p>
       </div>
-      <div className="w-full md:w-9/12 flex flex-wrap mt-8">
-        <div className="w-20 shadow-lg flex items-center justify-center rounded-2xl border-gray-400 border-2 mx-2 p-1">
+      <div className="w-10/12 md:w-9/12 flex flex-wrap mt-5">
+        <div className="w-20 m-2 shadow-2xl text-sm flex items-center justify-center rounded-2xl border-gray-400 border-2 mx-2 p-1">
           <h6 className="text-md font-semibold mx-1">Filter</h6>
           <img className="w-5" src="./public/filter.png" alt="" />
         </div>
-        <div className="w-22 shadow-lg flex items-center justify-center rounded-2xl border-gray-400 border-2 mx-2 p-1">
+        <div className="w-22 m-2 shadow-2xl flex text-sm items-center justify-center rounded-2xl border-gray-400 border-2 mx-2 p-1">
           <h6 className="text-md font-semibold mx-1">Sort By</h6>
           <img className="w-3 m-1 " src="down-arrow.png" alt="" />
         </div>
         {filter.map((filters, index) => {
           return (  
             <div key={index} > 
-              <div className="w-22 shadow-lg flex items-center justify-center rounded-2xl border-gray-400 border-2 mx-2 p-1">
+              <div className="w-22 m-2 text-sm shadow-2xl flex items-center justify-center rounded-2xl border-gray-400 border-2 mx-2 p-1">
                 <h6 className="text-md font-semibold mx-1">{filters}</h6>
               </div>
             </div>
           );
         })}
       </div>
-      <div className="flex justify-center mt-9  flex-wrap w-10/12">
+      <div className="flex justify-center mt-6  flex-wrap w-10/12">
           {restaurants.map((restaurant, index) => (
             <div
               key={index}
